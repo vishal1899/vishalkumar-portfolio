@@ -1,0 +1,9 @@
+.hero .container
+{
+    background: blueviolet;
+}
+
+.hero .container .col-2 .char
+{
+    left: -80px;
+}
