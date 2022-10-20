@@ -18,8 +18,7 @@ body
     max-width: 1600px;
     height: 100px;
     margin: auto;
-    position: fixed;
-    top: 0; left: 0; right: 0;
+    position: relative;
     background-color: #212121;
     display: flex;
     align-items: center;
@@ -146,14 +145,35 @@ body
 .hero .container .col-2
 {
    height: 100%;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 .hero .container .col-2 .char
 {
     width: 600px;
     position: absolute;
-    left: 50px;
     bottom: 0;
 }
 /* hero section end */
+
+
+
+
+/* media queries */
+
+@media screen and 
+(max-width:1150px) and
+(min-width: 950px)
+{
+    .hero .container
+    {
+    background: blueviolet;
+    }   
+
+.hero .container .col-2 .char
+{
+    left: -80px;
+}
+}
+
+
