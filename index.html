@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./CSS/mobile.css">
     <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -19,33 +20,24 @@
     <header>
         <div class="navbar">
             <h1>Vishal Kumar</h1>
-            <ul id="ulmenu">
-                <li><a href="">Home</a></li>
+            <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="">Project</a></li>
                 <li><a href="">About Me</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <i id="menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
-            <i id="close" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <i id="icon" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <!-- <i id="icon" class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
         </div>
     </header>
 
     <script>
         {
-            function openmenu()
-            {
-                document.getElementById("ulmenu").style.display= "flex";
-                document.getElementById("close").style.display= "inline-block";
-                document.getElementById("menu").style.display= "none";
-            }
-    
-            function closemenu()
-            {
-                document.getElementById("ulmenu").style.display= "none";
-                document.getElementById("close").style.display= "none";
-                document.getElementById("menu").style.display= "inline-block";
-    
-            }
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('#menu').toggleClass("show");
+                });
+            });
         }
     </script>
 
@@ -61,7 +53,7 @@
                     <a href="https://drive.google.com/uc?export=download&id=1zI1JuYI2iNX-JZ4VIyHNsLkin2p73xRs">Download CV</a>
                 </div>
                 <div class="items item-2">
-                    <img src="./char.png" width="600" alt="Vishal Image">
+                    <img src="./char.png" width="80%" alt="Vishal Image">
                 </div>
             </div>
         </section>
