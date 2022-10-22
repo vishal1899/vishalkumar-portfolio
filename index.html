@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishal - Portfolio</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
@@ -17,14 +19,35 @@
     <header>
         <div class="navbar">
             <h1>Vishal Kumar</h1>
-            <ul>
+            <ul id="ulmenu">
                 <li><a href="">Home</a></li>
                 <li><a href="">Project</a></li>
                 <li><a href="">About Me</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <i id="menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i id="close" class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </div>
     </header>
+
+    <script>
+        {
+            function openmenu()
+            {
+                document.getElementById("ulmenu").style.display= "flex";
+                document.getElementById("close").style.display= "inline-block";
+                document.getElementById("menu").style.display= "none";
+            }
+    
+            function closemenu()
+            {
+                document.getElementById("ulmenu").style.display= "none";
+                document.getElementById("close").style.display= "none";
+                document.getElementById("menu").style.display= "inline-block";
+    
+            }
+        }
+    </script>
 
     <!-- ===================================================
                     Start Hero Section
@@ -35,7 +58,7 @@
                 <div class="items item-1">
                     <h1>I'm <span>Vishal Kumar</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora possimus velit obcaecati accusantium iste sunt voluptatibus, odit impedit repudiandae inventore quisquam. Mollitia hic doloribus magni eligendi id repellendus porro!</p>
-                    <a href="">Download CV</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1zI1JuYI2iNX-JZ4VIyHNsLkin2p73xRs">Download CV</a>
                 </div>
                 <div class="items item-2">
                     <img src="./char.png" width="600" alt="Vishal Image">
@@ -44,4 +67,4 @@
         </section>
     
 </body>
-</html>
+</html>+-

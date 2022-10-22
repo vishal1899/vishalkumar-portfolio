@@ -62,6 +62,8 @@ header
     border-radius: 5px;
 }
 
+.navbar i { display: none;}
+
  /* ===================================================
                 start Hero section
     ===================================================  */
@@ -81,6 +83,7 @@ section
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 2fr 1fr; */
     column-gap: 20px;
     row-gap: 20px;
     border: 3px solid var(--theme-color);
@@ -112,7 +115,7 @@ section
 .item-1 h1 span
 {
     color: var(--theme-color);
-    text-shadow: 0 0 10px var(--theme-color);
+    text-shadow: 0 0 5px var(--theme-color);
     text-transform: uppercase;
     /*/// font-family: 'Tangerine', serif */
 }
@@ -128,6 +131,7 @@ section
 .item-1 a
 {
     text-decoration: none;
+    text-transform: uppercase;
     background: whitesmoke;
     color: var(--bg-color);
     display: inline-block;
@@ -141,6 +145,11 @@ section
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     color: whitesmoke;
     background: var(--bg-color);
+}
+
+.item-1 a:active
+{
+    background: green;
 }
 
 .item-2
