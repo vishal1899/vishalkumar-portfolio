@@ -32,12 +32,13 @@ header
 {
     width: 85%;
     max-width: 1400px;
-    color: #fff;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.navbar h1 { color: #fff;}
 
 .navbar ul li
 {
@@ -62,12 +63,16 @@ header
     border-radius: 5px;
 }
 
-.navbar i { display: none;}
+.navbar i 
+{
+    color: #fff;
+    display: none;
+}
 
- /* ===================================================
-                start Hero section
-    ===================================================  */
 
+/* ===================================================
+                Reusable Code Start
+===================================================  */
 section
 {
     background: var(--bg-color);
@@ -81,13 +86,45 @@ section
     width: 90%;
     max-width: 1400px;
     margin: auto;
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 1.3fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
     border: 3px solid var(--theme-color);
 }
+
+.grid
+{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-two-column
+{
+    grid-template-columns: 1.3fr 1fr;
+}
+
+#btn
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: whitesmoke;
+    color: var(--bg-color);
+    display: inline-block;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#btn:hover
+{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: whitesmoke;
+    background: var(--bg-color);
+}
+
+ /* ===================================================
+                start Hero section
+    ===================================================  */
+
+
 
 /*  */
 
@@ -126,30 +163,6 @@ section
     text-align: justify;
     line-height: 1.5;
     text-transform: capitalize;
-}
-
-.item-1 a
-{
-    text-decoration: none;
-    text-transform: uppercase;
-    background: whitesmoke;
-    color: var(--bg-color);
-    display: inline-block;
-    padding: 12px 20px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.item-1 a:hover
-{
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    color: whitesmoke;
-    background: var(--bg-color);
-}
-
-.item-1 a:active
-{
-    background: green;
 }
 
 .item-2

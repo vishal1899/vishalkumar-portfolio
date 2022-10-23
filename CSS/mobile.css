@@ -96,7 +96,7 @@
 
 }
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1200px)
 {
 
     .navbar>h1
@@ -117,8 +117,8 @@
 
     .container
     {
-        max-width: 900px;
-        grid-template-columns: 1.5fr 1fr;
+        max-width: 1200px;
+        grid-template-columns: 1.3fr 1fr;
     }
 
     .item-1
