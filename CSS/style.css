@@ -36,9 +36,13 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99;
 }
 
-.navbar h1 { color: #fff;}
+#logo
+{
+    width: 10%;
+}
 
 .navbar ul li
 {
@@ -92,8 +96,7 @@ section
 .grid
 {
     display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
+    /* //column-gap: 10px; */
 }
 
 .grid-two-column
@@ -124,22 +127,19 @@ section
                 start Hero section
     ===================================================  */
 
-
-
-/*  */
-
 .items
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     color: #fff;
+    position: relative;
+    display: flex;
 }
 
 .item-1
 {
-    padding-left: 40px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .item-1 h1 
@@ -165,7 +165,8 @@ section
     text-transform: capitalize;
 }
 
-.item-2
+.item-2 img
 {
-    justify-self: center;
+    width: 100%;
+    margin: auto;
 }

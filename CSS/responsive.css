@@ -1,9 +1,14 @@
-@media screen and (max-width: 768px)
+
+/* ===================================================
+        Resnponsive For Mobile an tab Max Width 1000px
+===================================================  */
+
+@media screen and (max-width: 1000px)
 /* and (min-width: 320px) */
 {
-    .navbar h1
+    #logo
     {
-        font-size: 1.3em;
+        width: 20%;
     }
 
     .navbar ul
@@ -36,21 +41,15 @@
 
     .navbar ul li a
     {
-        /* color: var(--bg-color); */
         font-weight: bold;
     }
 
-    .navbar i
+    #icon
     {
         display: inline-block;
         font-size: 1.5em;
     }
-
-    .navbar #close
-    {
-        display: none;
-    }
-
+    
     /* ===================================================
                 start Hero section
     ===================================================  */
@@ -58,67 +57,28 @@
     section
     {
         height: auto;
+        padding: 40px 0 40px 0;
     }
 
     .container
     {
         max-width: 768px;
         min-height: 320px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        grid-template-columns: repeat(1,1fr);
-        display: block;
+        grid-template-rows: repeat(2,1fr);
         display: flex;
         flex-direction: column-reverse;
     }
 
     .item-1
     {
-        padding: 20px;
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        /* background: rebeccapurple; */
     }
 
-    .item-1>h1
+    .item-2
     {
-        font-size: 2em;
-    }
-
-    .item-1>p
-    {
-        font-size: 1em;
-    }
-
-
-
-    .item-2>img
-    {
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 1200px)
-{
-
-    .navbar>h1
-    {
-        font-size: 1.8em;
-    }
-
-    .navbar ul li
-    {
-        margin-right: 10px;
-    }
-
-    .navbar ul li a
-    {
-        font-size: 0.8em;
-    }
-
-
-    .container
-    {
-        max-width: 1200px;
-        grid-template-columns: 1.3fr 1fr;
+        /* background: gold; */
     }
 
     .item-1
@@ -126,24 +86,20 @@
         padding: 20px;
     }
 
-    .item-1>h1
+    .item-1 h1
     {
         font-size: 2em;
     }
 
-    .item-1>p
+    .item-1 p
     {
-        font-size: 0.8em;
+        font-size: 1em;
+        line-height: 2;
     }
 
-    .item-1>a
+    .item-2 img
     {
-        font-size: 0.8em;
+        width: 70%;
     }
-
-    .item-2>img
-    {
-        width: 100%;
-    }
-    
 }
+
