@@ -72,18 +72,6 @@
 
     .item-1
     {
-        /* grid-column-start: 1;
-        grid-column-end: 3; */
-        /* background: rebeccapurple; */
-    }
-
-    .item-2
-    {
-        /* background: gold; */
-    }
-
-    .item-1
-    {
         padding: 20px;
     }
 
@@ -101,6 +89,44 @@
     .item-2 img
     {
         width: 70%;
+    }
+
+     /* ===================================================
+                start contact section
+    ===================================================  */
+
+    .contact
+    {
+        flex-direction: column;
+    }
+
+    .contact-item h2
+    {
+        font-size: 1em;
+    }
+
+    .contact-item hr
+    {
+        width: 10%;
+    }
+
+    /* ===================================================
+                start project section
+    ===================================================  */
+
+    .project
+    {
+        flex-direction: column;
+    }
+
+    .project-items h2
+    {
+        font-size: 1em;
+    }
+
+    .project-item hr
+    {
+        width: 10%;
     }
 }
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Coding - Project</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="shortcut icon" href="./assets/char.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+<!-- ===================================================
+                    Start Header
+=================================================== -->
+    
+    <header>
+        <div class="navbar">
+            <img id="logo" src="./assets/logo.png" alt="logo">
+            <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./project.html">Project</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <i id="icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+            $('#menu').toggleClass("show");
+            });
+        });  
+    </script>
+
+<!-- ===================================================
+                Project Section Start
+=================================================== -->
+
+    <section class="project-section">
+        <div class="container grid grid-five-column project">
+            <div class="project-items project-item">
+                <hr><h2>Projects</h2><hr>
+            </div>
+            <!-- project -->
+            <div class="project-items">
+                <img src="./assets/char.png" width="50px" alt="">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde!</p>
+                <a id="second-btn" href="#">Visit</a>
+            </div>
+            <!-- project -->
+
+            <div class="project-items">
+                <img src="./assets/char.png" width="50px" alt="">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde!</p>
+                <a id="second-btn" href="#">Visit</a>
+            </div>
+            <!-- project -->
+
+            <div class="project-items">
+                <img src="./assets/char.png" width="50px" alt="">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde!</p>
+                <a id="second-btn" href="#">Visit</a>
+            </div>
+            <!-- project -->
+
+            <div class="project-items">
+                <img src="./assets/char.png" width="50px" alt="">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde!</p>
+                <a id="second-btn" href="#">Visit</a>
+            </div>
+            <!-- project -->
+
+            <div class="project-items">
+                <img src="./assets/char.png" width="50px" alt="">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, unde!</p>
+                <a id="second-btn" href="#">Visit</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
