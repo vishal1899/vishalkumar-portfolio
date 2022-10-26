@@ -42,6 +42,7 @@ header
 #logo
 {
     width: 10%;
+    cursor: pointer;
 }
 
 .navbar ul li
